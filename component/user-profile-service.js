@@ -6,7 +6,7 @@ router.get('/', async (req, res, next) => {
     try {
         let book = await Book.findAll();
         if (book.length) return res.status(200).json(book);
-        else return res.status(400).json({ message: "No Book" });
+        else return res.status(400).json({ message: "No Book22" });
     } catch (err) {
         next(err);
     }
